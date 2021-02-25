@@ -5,6 +5,7 @@
 
 * {box-sizing: border-box;}
 
+
 html {
     background: white;
     border: var(--border);
@@ -12,6 +13,7 @@ html {
     height: auto;
     max-width: 100vw;
     font-family: var(--sabon);
+    font-weight: 700;
 }
 
 body {
@@ -31,10 +33,12 @@ a {
 .container {
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 100vh;
-    overflow: hidden;
-  }
-
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+}  
+  
 /* -----------BOX 1-----------*/
 
   .box1 {
@@ -42,43 +46,43 @@ a {
     border-right: var(--border);
     justify-content: center;
     display: inline-flex;
-  }
+    height: 100%;
+    flex: 1 1 auto;
+}
   
   .heading1 {
-      font-size: 10vh;
-      font-weight: 700;
-      writing-mode: vertical-lr;
-      transform: rotate(180deg);
-      margin: 0;
+    font-size: 10vh;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    margin: 0;
   /*     border: 2px solid; */
-  }
+}
   
   .heading2 {
-      font-size: 5vh;
-      font-weight: 700;
-      writing-mode: vertical-lr;
-      transform: rotate(180deg);
-      margin: 0;
-      font-style: italic;
-      /* border: 2px solid; */
-  }  
+    font-size: 5vh;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    margin: 0;
+    font-style: italic;
+    /* border: 2px solid; */
+}  
 
 /* -----------BOX 2-----------*/
 
   .box2 {
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 100%;
+}
 
-  }
   .index-header {
     background-color: white;
     border-bottom: var(--border);
     border-top: var(--border);
+    border-right: var(--border);
     display: flex;
     font-size: 1.7vh;
     font-style: italic;
-    font-weight: 700;
     flex: 1 1 auto;
     justify-content: center;
     position: fixed;
@@ -87,37 +91,35 @@ a {
     width: 50%;
     text-align: center;
     top: 0%;
-  }
+}
 
   .index-top {
-    margin-top: 35vh;
+    margin-top: 32vh;
     border-bottom: var(--border);
-  }
+}
 
   .index {
     border-bottom: var(--border); 
-    font-weight: 700;
     padding: 2vh;
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
-  }
+}
 
-  .index-bottom{
-    margin-top: 35vh;
-    border-bottom: var(--border);
-  }
+  .index-bottom {
+    margin-top: 32vh;
+}
 
   .index-footer {
     background-color: white;
     border-bottom: var(--border);
     border-top: var(--border);
+    border-right: var(--border);
     bottom: 0%;
     display: flex;
     flex: 1 1 auto;
     font-size: 1.7vh;
     font-style: italic;
-    font-weight: 700;
     justify-content: center;
     margin: 0; 
     overflow: hidden;
@@ -125,18 +127,29 @@ a {
     padding: 2vh;
     text-align: center;
     width: 50%;
-  }
+}
 
-/* NAVBAR & Footer */
+  .index-header1 {
+    border-bottom: 0;
+    border-top: var(--border);
+    border-left: var(--border);
+}
+  
+  .index-footer1 {
+    border-top: 0;
+    border-bottom: var(--border);
+    border-left: var(--border);
+}
 
+
+/* ------------NAVBAR & Footer------------ */
 .navbar {
     background-color: white;
-    border-bottom: var(--border);
-    border-top: var(--border);
+    border: var(--border);
     display: flex;
     flex: 1 1 auto;
     justify-content: space-between;
-    /* overflow: hidden; */
+    left: 0%;
     position: fixed;
     top: 0%;
     width: 100%;
@@ -148,7 +161,6 @@ a {
     display: inline;
     font-size: 1.7vh;
     font-style: italic;
-    font-weight: 700;
     text-align: center;
 }
 
@@ -158,20 +170,14 @@ a {
     text-align: center;
 }
 
-/* .arrowend {
-    border: 1px solid gray;
-    font-size: 2vh;
-    text-align: center;
-    width: 20px;
-} */
-
 .footerend {
     background-color: white;
-    border-bottom: var(--border);
+    border: var(--border);
     border-top: var(--border);
     display: flex;
     flex: 1 1 auto;
     justify-content: center;
+    left: 0%;
     overflow: hidden;
     position: fixed;
     bottom: 0%;
@@ -181,29 +187,23 @@ a {
     margin: 0;  
 }
 
-
-
-/* INTROS */
+/* ------------INTROS------------ */
 
 .chapter-intro {
     border-bottom: var(--border);
     font-size: 2rem;
     font-style: normal;
-    font-weight: 700;
     padding: 5vh 10vw;
     margin-top: 6vh;
     text-align: center;
 }
 
-
-
-/* Questions and Exclamations */
+/* CHAPTER 1------------Questions and Exclamations------------ */
 
 .qe-container {
     display: flex;
     flex-direction: column;
     height: auto;
-    font-weight: 700;
     text-align: center;
 }
 
@@ -226,7 +226,7 @@ a {
     border-bottom: var(--border);
     padding: 3vh 10vw;
     font-size: 1.2rem;
-}
+    }
 
 .qe-graphics {
     background-color: black;
@@ -235,24 +235,19 @@ a {
     height: auto;
 }
 
-
-
-/* Apostrophe */
+/* CHAPTER 2------------Apostrophe------------ */
 
 .apostrophecontainer {
     display: flex;
     flex-direction: column;
     height: auto;
-    font-weight: 700;
     font-size: 1.5rem;
     font-style: italic;
 }
 
 .a-text-top {
     margin: 4vh 20vw 2vh 7vw;
-
 }
-
 
 .a-text-left {
     text-align: left;
@@ -272,9 +267,7 @@ a {
     padding: 4vh 15vw 3vh;
 }
 
-
-
-/* Colons, Periods, and Commas */
+/* CHAPTER 3------------Colons, Periods, and Commas------------ */
 
 .commascontainer {
     display: flex;
@@ -289,7 +282,6 @@ a {
     display: block;
     padding: 2vh 0;
     font-size: 2vh;
-    font-weight: 700;
     text-align: center;
     line-height: 2.7vh;
 }
@@ -300,9 +292,7 @@ a {
     height: 100%;
 }
 
-
-
-/* Verbs and Adverbs */
+/* CHAPTER 4------------Verbs and Adverbs------------ */
 
 .verbs-container {
     padding: 4vh;
@@ -312,7 +302,6 @@ a {
     display: block;
     padding: 2vh 0;
     font-size: 1.5rem;
-    font-weight: 700;
     text-align: center;
     line-height: 3.5vh;
 }
@@ -323,6 +312,5 @@ a {
     line-height: 2.7vh;
 }
 
+/* CHAPTER 5------------Conclusion------------ */
 
-
-/* Conclusion */
