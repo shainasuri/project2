@@ -38,6 +38,55 @@ a {
     left: 0%;
     bottom: 0%;
 }  
+
+.index-footer {
+    background-color: white;
+    border-bottom: var(--border);
+    border-top: var(--border);
+    border-right: var(--border);
+    bottom: 0%;
+    display: flex;
+    flex: 1 1 auto;
+    font-size: 1.7vh;
+    font-style: italic;
+    justify-content: center;
+    margin: 0; 
+    overflow: hidden;
+    position: fixed;
+    padding: 2vh;
+    text-align: center;
+    width: 50%;
+}
+
+  .index-header1 {
+    bottom: 0;
+    border-top: var(--border);
+    border-left: var(--border);
+}
+  
+  .index-footer1 {
+    border-top: none;
+    border-bottom: var(--border);
+    border-left: var(--border);
+}
+
+.index-header {
+    background-color: white;
+    border-bottom: var(--border);
+    border-top: var(--border);
+    border-right: var(--border);
+    display: flex;
+    font-size: 1.7vh;
+    font-style: italic;
+    flex: 1 1 auto;
+    justify-content: center;
+    position: fixed;
+    padding: 2vh;
+    margin: 0; 
+    width: 50%;
+    text-align: center;
+    top: 0%;
+}
   
 /* -----------BOX 1-----------*/
 
@@ -75,24 +124,6 @@ a {
     height: 100%;
 }
 
-  .index-header {
-    background-color: white;
-    border-bottom: var(--border);
-    border-top: var(--border);
-    border-right: var(--border);
-    display: flex;
-    font-size: 1.7vh;
-    font-style: italic;
-    flex: 1 1 auto;
-    justify-content: center;
-    position: fixed;
-    padding: 2vh;
-    margin: 0; 
-    width: 50%;
-    text-align: center;
-    top: 0%;
-}
-
   .index-top {
     margin-top: 32vh;
     border-bottom: var(--border);
@@ -107,38 +138,7 @@ a {
 }
 
   .index-bottom {
-    margin-top: 32vh;
-}
-
-  .index-footer {
-    background-color: white;
-    border-bottom: var(--border);
-    border-top: var(--border);
-    border-right: var(--border);
-    bottom: 0%;
-    display: flex;
-    flex: 1 1 auto;
-    font-size: 1.7vh;
-    font-style: italic;
-    justify-content: center;
-    margin: 0; 
-    overflow: hidden;
-    position: fixed;
-    padding: 2vh;
-    text-align: center;
-    width: 50%;
-}
-
-  .index-header1 {
-    border-bottom: 0;
-    border-top: var(--border);
-    border-left: var(--border);
-}
-  
-  .index-footer1 {
-    border-top: 0;
-    border-bottom: var(--border);
-    border-left: var(--border);
+    margin-top: 33vh;
 }
 
 
