@@ -28,7 +28,7 @@ a {
     color: black;
 }
 
-/* INDEX.HTML */
+/* ------------INDEX.HTML------------ */
 
 .container {
     display: grid;
@@ -89,21 +89,24 @@ a {
 }
 
 .index-hover {
-    display: none;
     color: white;
+    display: none;
+    font-size: 1.5rem;
+    position: fixed;
     text-align: center;
-    
+    top: 0%;
+    width: 50vw;
 }
 
 .index:hover + .index-hover{
-    display: block;
     background-color: black;
+    display: block;
 }
 
   
 /* -----------BOX 1-----------*/
 
-  .box1 {
+.box1 {
     align-items: center;
     border-right: var(--border);
     justify-content: center;
@@ -112,15 +115,15 @@ a {
     flex: 1 1 auto;
 }
   
-  .heading1 {
+.heading1 {
     font-size: 10vh;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
     margin: 0;
-  /*     border: 2px solid; */
+    /* border: 2px solid; */
 }
   
-  .heading2 {
+.heading2 {
     font-size: 5vh;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
@@ -131,27 +134,60 @@ a {
 
 /* -----------BOX 2-----------*/
 
-  .box2 {
+@keyframes scroll {
+    0%   {right: 0%;}
+    50%  {right: 100%;}
+    100% {right: 0%;}
+}
+
+.box2 {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-  .index-top {
+.index-top {
     margin-top: 32vh;
     border-bottom: var(--border);
 }
 
-  .index {
+.index {
     border-bottom: var(--border); 
-    padding: 2vh;
     display: inline-block;
-    white-space: nowrap;
+    font-size: 1.1rem;
+    padding: 0.5vh;
     overflow: hidden;
+    white-space: nowrap;
 }
 
-  .index-bottom {
-    margin-top: 33vh;
+.index-bottom {
+    margin-top: 35vh;
+}
+
+.index-scroll-1 {
+    animation: scroll 25s infinite;
+    position: relative;
+}
+
+.index-scroll-2 {
+    animation: scroll 10s infinite;
+    position: relative;
+}
+
+.index-scroll-3 {
+    animation: scroll 20s infinite;
+    animation-delay: 1s;
+    position: relative;
+}
+
+.index-scroll-4 {
+    animation: scroll 7s infinite;
+    position: relative;
+}
+
+.index-scroll-5 {
+    animation: scroll 12s infinite;
+    position: relative;
 }
 
 
@@ -164,8 +200,9 @@ a {
     justify-content: space-between;
     left: 0%;
     position: fixed;
+    overflow: hidden;
     top: 0%;
-    width: 100%;
+    width: 100vw;
     padding: 2vh;
     margin: 0; 
 } 
@@ -175,6 +212,7 @@ a {
     font-size: 1.7vh;
     font-style: italic;
     text-align: center;
+    background-color: white;
 }
 
 .arrow {
@@ -187,20 +225,29 @@ a {
     background-color: white;
     border: var(--border);
     border-top: var(--border);
+    bottom: 0%;
     display: flex;
     flex: 1 1 auto;
     justify-content: center;
     left: 0%;
     overflow: hidden;
     position: fixed;
-    bottom: 0%;
     min-width: 0;
-    width: 100vw;
     padding: 2vh;
     margin: 0;  
+    width: 100vw;
 }
 
 /* ------------INTROS------------ */
+
+@keyframes intro {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
 
 .chapter-intro {
     border-bottom: var(--border);
@@ -209,6 +256,10 @@ a {
     padding: 5vh 10vw;
     margin-top: 6vh;
     text-align: center;
+}
+
+.intro-text {
+    animation: intro 5s;
 }
 
 /* CHAPTER 1------------Questions and Exclamations------------ */
@@ -282,6 +333,15 @@ a {
 
 /* CHAPTER 3------------Colons, Periods, and Commas------------ */
 
+@keyframes circle-spin {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
 .commascontainer {
     display: flex;
     flex-direction: column;
@@ -300,29 +360,93 @@ a {
 }
 
 .commasgraphic {
+    animation: circle-spin 20s infinite;
     display: block;
     padding: 2vh 0;
     height: 100%;
 }
 
+@media screen and (min-width: 1200px) {
+    .commastext {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin: 5vh 0;
+    }
+    .commastext-last {
+        margin: 5vh 0 13vh 0;
+    }
+    .commascontainer {
+        margin: 0 25vh;
+    }
+}
+
 /* CHAPTER 4------------Verbs and Adverbs------------ */
+
+@keyframes grow-shrink {
+    0% {
+        font-size: 1rem;
+        font-style: italic;
+    }
+    30% {
+        font-size: 2rem;
+        font-style: normal;
+        line-height: 2.5rem;
+    }
+    80% {
+        font-size: 2rem;
+        font-style: normal;
+        line-height: 2.5rem;
+    }
+    100% {
+        font-size: 1rem;
+        font-style: italic;
+    }
+}
+.v-animation-1 {
+    animation: grow-shrink 15s;
+    animation-delay: 4s;
+}
+
+.v-animation-2 {
+    animation: grow-shrink 20s;
+    animation-delay: 18s;
+}
+
+.v-animation-3 {
+    animation: grow-shrink 15s;
+    animation-delay: 35s;
+}
 
 .verbs-container {
     padding: 4vh;
     margin-bottom: 6vh;
 }
+
 .v-text {
     display: block;
     padding: 2vh 0;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-style: italic;
     text-align: center;
-    line-height: 3.5vh;
+    line-height: 2.7vh;
 }
 
-.v-text-alt {
-    font-style: italic;
-    font-size: 1rem;
-    line-height: 2.7vh;
+@media screen and (min-width: 1200px) {
+    .intro-text {
+        margin: 0 30vh;
+    }
+    
+    .verbs-container {
+        margin: 0 35vh;
+    }
+
+    .v-text {
+        margin: 5vh;
+    }
+
+    .v-animation-3 {
+        margin-bottom: 9vh;
+    }
 }
 
 /* CHAPTER 5------------Conclusion------------ */
