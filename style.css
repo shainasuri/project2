@@ -87,6 +87,19 @@ a {
     text-align: center;
     top: 0%;
 }
+
+.index-hover {
+    display: none;
+    color: white;
+    text-align: center;
+    
+}
+
+.index:hover + .index-hover{
+    display: block;
+    background-color: black;
+}
+
   
 /* -----------BOX 1-----------*/
 
