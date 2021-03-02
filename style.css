@@ -438,8 +438,9 @@ a {
 .commasgraphic {
     animation: circle-spin 20s infinite;
     display: block;
-    padding: 2vh 0;
     height: 100%;
+    padding: 2vh 0;
+    
 }
 
 @media screen and (min-width: 1200px) {
@@ -539,11 +540,17 @@ a {
     100% {line-height: 0vh;}
 }
 
-.conclusion-container {
+.conclusion-container1 {
+    padding: 0 2vw;
+    border-bottom: var(--border);
+}
+
+.conclusion-container2 {
+    align-items: center;
     border-bottom: var(--border);
     display: flex;
-    align-items: center;
     justify-content: center;
+    padding: 0 2vw;
 }
 
 .conclusion-circle {
@@ -607,7 +614,7 @@ a {
 
 @media screen and (min-width: 750px) {
     .conclusion-circle {
-        margin: 5vh 10vh;
+        margin: 5vh 10vw;
     }
     
     .conclusion-text-part1 {
