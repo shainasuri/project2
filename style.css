@@ -276,6 +276,7 @@ a {
     border-bottom: var(--border);
     padding: 5vh 10vw;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .q-container3 {
@@ -290,14 +291,43 @@ a {
     border-bottom: var(--border);
     padding: 3vh 10vw;
     font-size: 1.2rem;
-    }
+    text-align: center;
+}
 
 .qe-graphics {
     background-color: black;
     border-bottom: var(--border);
+    
     width: 100%;
     height: auto;
 }
+
+@media screen and (min-width: 750px) {
+    .q-textcontainer {
+        padding: 4vh 20vw;
+        font-size: 1.5rem;
+    }
+
+    .q-container2, .q-container3 {
+        font-size: 2rem;
+        padding: 5vh 15vw;
+    }
+
+    .qe-graphics {
+        padding: 0 15vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .q-textcontainer {
+        padding: 5vh 30vw;
+    }
+
+    .qe-graphics {
+        padding: 0 30vw;
+    }
+}
+
 
 /* CHAPTER 2------------Apostrophe------------ */
 
@@ -497,3 +527,129 @@ a {
 
 /* CHAPTER 5------------Conclusion------------ */
 
+@keyframes leading-extend {
+    0% {line-height: 0vh;}
+    100% {line-height: 7vh;}
+}
+
+@keyframes leading-extend2 {
+    0% {line-height: 0vh;}
+    20% {line-height: 6vh;}
+    80% {line-height: 6vh;}
+    100% {line-height: 0vh;}
+}
+
+.conclusion-container {
+    border-bottom: var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conclusion-circle {
+    animation: circle-spin 30s infinite;
+    animation-delay: 5s;
+    display: block;
+    padding: 2vh 0;
+    height: 100%;
+    margin: 5vh;
+}
+
+
+.conclusion-text-part1 {
+    animation: leading-extend 10s;
+    animation-delay: 10s;
+    font-size: 1.5rem;
+    line-height: 7vh;
+    text-align: center;
+    margin: 5vh 7vh 0;
+}
+
+.conclusion-text-stop {
+    animation: intro 40s;
+    font-size: 10rem;
+    text-align: center;
+    margin: 0 0 6vh;
+}
+
+.conclusion-text-part2 {
+    /* animation: leading-extend 30s; */
+    font-size: 1.5rem;
+    line-height: 7vh;
+    text-align: center;
+    margin: 0 7vh 5vh;
+}
+
+.conclusion-text-part3 {
+    font-size: 2rem;
+    font-style: normal;
+    padding: 0 20vw 0 10vw;
+    margin-top: 6vh;
+}
+
+.punctuation {
+    animation: leading-extend2 30s infinite;
+    font-size: 3rem;
+    font-style: normal;
+    padding: 0vh 20vw;
+    margin-top: 6vh;
+    text-align: center;
+}
+
+.conclusion-text-part4 {
+    font-size: 2rem;
+    font-style: normal;
+    padding: 0 10vw 0 20vw;
+    margin-top: 6vh;
+    margin-bottom: 12vh;
+    text-align: right;
+}
+
+@media screen and (min-width: 750px) {
+    .conclusion-circle {
+        margin: 5vh 10vh;
+    }
+    
+    .conclusion-text-part1 {
+        font-size: 2rem;
+        margin: 5vh 10vh 0;
+    }
+
+    .conclusion-text-part2 {
+        font-size: 2rem;
+        margin: 0 10vh 6vh;
+    }
+
+    .conclusion-text-stop {
+        font-size: 20rem;
+        margin: 0 0 10vh;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .conclusion-circle {
+        margin: 5vh 30vw;
+    }
+
+    .conclusion-text-part1 {
+        font-size: 2rem;
+        margin: 5vh 30vw 0;
+    }
+
+    .conclusion-text-part2 {
+        font-size: 2rem;
+        margin: 0 30vw 6vh;
+    }
+
+    .conclusion-text-stop {
+        margin: 0 0 15vh;
+    }
+
+    .conclusion-text-part3 {
+        padding: 0 25vw 0 15vw;
+    }
+
+    .conclusion-text-part4 {
+        padding: 0 15vw 0 25vw;
+    }
+}
