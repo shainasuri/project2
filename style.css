@@ -331,6 +331,52 @@ a {
     padding: 4vh 15vw 3vh;
 }
 
+.a-graphic {
+    margin: 0 5vh;
+    padding: 2vh 0;
+    display: block;
+    height: 100%;
+
+
+}
+
+@media screen and (min-width: 800px) {
+    .a-text-top {
+        margin: 4vh 20vw 2vh 15vw;
+    }
+    
+    .a-text-left {
+        margin: 2vh 20vw 2vh 15vw;
+    }
+
+    .a-text-right {
+        margin: 2vh 15vw 2vh 20vw;
+    }
+
+    .a-graphic {
+        margin: 0 10vh;
+    }
+    
+}
+@media screen and (min-width: 1200px) {
+    .a-text-top {
+        margin: 4vh 40vw 2vh 25vw;
+    }
+
+    .a-text-left {
+        margin: 2vh 40vw 2vh 25vw;
+    }
+
+    .a-text-right {
+        margin: 2vh 25vw 2vh 40vw;
+    }
+
+    .a-graphic {
+        margin: 0 30vh;
+    }
+    
+}
+
 /* CHAPTER 3------------Colons, Periods, and Commas------------ */
 
 @keyframes circle-spin {
