@@ -1,42 +1,43 @@
 :root {
-    --sabon: linotype-sabon, sans-serif;
     --border: 5px solid black;
+    --sabon: linotype-sabon, sans-serif;
+   
 }
 
 * {box-sizing: border-box;}
 
-
 html {
     background: white;
     border: var(--border);
-    width: 100%;
-    height: auto;
-    max-width: 100vw;
     font-family: var(--sabon);
     font-weight: 700;
+    height: auto;
+    max-width: 100vw;
+    width: 100%;
+   
 }
 
 body {
     height: 100%;
-    overflow-x: hidden;
     margin: 0;
+    overflow-x: hidden;
     padding: 0;
 }
 
 a {
-    text-decoration: none;
     color: black;
+    text-decoration: none;
 }
 
-/* ------------INDEX.HTML------------ */
+/* ---------------------------------INDEX.HTML--------------------------------- */
 
 .container {
+    bottom: 0%;
     display: grid;
     grid-template-columns: 50% 50%;
     height: 100%;
     top: 0%;
     left: 0%;
-    bottom: 0%;
 }  
 
 .index-footer {
@@ -191,7 +192,7 @@ a {
 }
 
 
-/* ------------NAVBAR & Footer------------ */
+/* -------------------NAVBAR & FOOTER------------------- */
 .navbar {
     background-color: white;
     border: var(--border);
@@ -238,7 +239,7 @@ a {
     width: 100vw;
 }
 
-/* ------------INTROS------------ */
+/* -------------------CHAPTER-INTROS------------------- */
 
 @keyframes intro {
     0% {
@@ -262,152 +263,151 @@ a {
     animation: intro 5s;
 }
 
-/* CHAPTER 1------------Questions and Exclamations------------ */
+/* CHAPTER 1------------------------Questions and Exclamations------------------------ */
 
-.qe-container {
+.questions-container {
     display: flex;
     flex-direction: column;
     height: auto;
     text-align: center;
 }
 
-.q-container2 {
+.questions-container-2 {
     /* border: 5px solid red; */
     border-bottom: var(--border);
-    padding: 5vh 10vw;
     font-size: 1.5rem;
+    padding: 5vh 10vw;
     text-align: center;
 }
 
-.q-container3 {
+.questions-container-3 {
     /* border: 5px solid red; */
-    margin-bottom: 6vh;
-    padding: 5vh 10vw;
     font-size: 1.5rem;
     font-style: italic;
+    margin-bottom: 6vh;
+    padding: 5vh 10vw;
 }
 
-.q-textcontainer {
+.questions-text-container {
     border-bottom: var(--border);
-    padding: 3vh 10vw;
     font-size: 1.2rem;
+    padding: 3vh 10vw;
     text-align: center;
 }
 
-.qe-graphics {
+.questions-graphics {
     background-color: black;
     border-bottom: var(--border);
-    
-    width: 100%;
     height: auto;
+    width: 100%;
 }
 
 @media screen and (min-width: 750px) {
-    .q-textcontainer {
-        padding: 4vh 20vw;
+    .questions-text-container {
         font-size: 1.5rem;
+        padding: 4vh 20vw;
     }
 
-    .q-container2, .q-container3 {
+    .questions-container-2, .questions-container-3 {
         font-size: 2rem;
         padding: 5vh 15vw;
     }
 
-    .qe-graphics {
+    .questions-graphics {
         padding: 0 15vw;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .q-textcontainer {
+    .questions-text-container {
         padding: 5vh 30vw;
     }
 
-    .qe-graphics {
+    .questions-graphics {
         padding: 0 30vw;
     }
 }
 
 
-/* CHAPTER 2------------Apostrophe------------ */
+/* CHAPTER 2------------------------Apostrophe------------------------ */
 
-.apostrophecontainer {
+.apostrophe-container {
     display: flex;
     flex-direction: column;
-    height: auto;
     font-size: 1.5rem;
     font-style: italic;
+    height: auto;
 }
 
-.a-text-top {
+.apostrophe-text-top {
     margin: 4vh 20vw 2vh 7vw;
 }
 
-.a-text-left {
-    text-align: left;
+.apostrophe-text-left {
     margin: 2vh 20vw 2vh 7vw;
+    text-align: left;
 }
 
-.a-text-right {
-    text-align: right;
+.apostrophe-text-right {
     margin: 2vh 7vw 2vh 20vw;
+    text-align: right;
 }
 
-.a-text-bottom {
-    margin-bottom: 10vh;
+.apostrophe-text-bottom {
     font-style: normal;
-    text-align: center;
     font-size: 1.7rem;
     padding: 4vh 15vw 3vh;
+    margin-bottom: 10vh;
+    text-align: center;
 }
 
-.a-graphic {
-    margin: 0 5vh;
-    padding: 2vh 0;
+.apostrophe-graphic {
     display: block;
     height: 100%;
+    margin: 0 5vh;
+    padding: 2vh 0;
 
 
 }
 
 @media screen and (min-width: 800px) {
-    .a-text-top {
+    .apostrophe-text-top {
         margin: 4vh 20vw 2vh 15vw;
     }
     
-    .a-text-left {
+    .apostrophe-text-left {
         margin: 2vh 20vw 2vh 15vw;
     }
 
-    .a-text-right {
+    .apostrophe-text-right {
         margin: 2vh 15vw 2vh 20vw;
     }
 
-    .a-graphic {
+    .apostrophe-graphic {
         margin: 0 10vh;
     }
     
 }
 @media screen and (min-width: 1200px) {
-    .a-text-top {
+    .apostrophe-text-top {
         margin: 4vh 40vw 2vh 25vw;
     }
 
-    .a-text-left {
+    .apostrophe-text-left {
         margin: 2vh 40vw 2vh 25vw;
     }
 
-    .a-text-right {
+    .apostrophe-text-right {
         margin: 2vh 25vw 2vh 40vw;
     }
 
-    .a-graphic {
+    .apostrophe-graphic {
         margin: 0 30vh;
     }
     
 }
 
-/* CHAPTER 3------------Colons, Periods, and Commas------------ */
+/* CHAPTER 3------------------------Colons, Periods, and Commas------------------------ */
 
 @keyframes circle-spin {
     from {
@@ -418,7 +418,7 @@ a {
     }
   }
 
-.commascontainer {
+.commas-container {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -427,15 +427,15 @@ a {
     padding: 0 15vw;
 }
    
-.commastext { 
+.commas-text { 
     display: block;
-    padding: 2vh 0;
     font-size: 2vh;
-    text-align: center;
     line-height: 2.7vh;
+    padding: 2vh 0;
+    text-align: center;
 }
 
-.commasgraphic {
+.commas-graphic {
     animation: circle-spin 20s infinite;
     display: block;
     height: 100%;
@@ -444,7 +444,7 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
-    .commastext {
+    .commas-text {
         font-size: 1.5rem;
         line-height: 2rem;
         margin: 5vh 0;
@@ -452,12 +452,12 @@ a {
     .commastext-last {
         margin: 5vh 0 13vh 0;
     }
-    .commascontainer {
+    .commas-container {
         margin: 0 25vh;
     }
 }
 
-/* CHAPTER 4------------Verbs and Adverbs------------ */
+/* CHAPTER 4------------------------Verbs and Adverbs------------------------ */
 
 @keyframes grow-shrink {
     0% {
@@ -479,17 +479,18 @@ a {
         font-style: italic;
     }
 }
-.v-animation-1 {
+
+.verbs-animation-1 {
     animation: grow-shrink 15s;
     animation-delay: 4s;
 }
 
-.v-animation-2 {
+.verbs-animation-2 {
     animation: grow-shrink 20s;
     animation-delay: 18s;
 }
 
-.v-animation-3 {
+.verbs-animation-3 {
     animation: grow-shrink 15s;
     animation-delay: 35s;
 }
@@ -499,7 +500,7 @@ a {
     margin-bottom: 6vh;
 }
 
-.v-text {
+.verbs-text {
     display: block;
     padding: 2vh 0;
     font-size: 1rem;
@@ -517,16 +518,16 @@ a {
         margin: 0 35vh;
     }
 
-    .v-text {
+    .verbs-text {
         margin: 5vh;
     }
 
-    .v-animation-3 {
+    .verbs-animation-3 {
         margin-bottom: 9vh;
     }
 }
 
-/* CHAPTER 5------------Conclusion------------ */
+/* CHAPTER 5------------------------Conclusion------------------------ */
 
 @keyframes leading-extend {
     0% {line-height: 0vh;}
@@ -540,12 +541,12 @@ a {
     100% {line-height: 0vh;}
 }
 
-.conclusion-container1 {
-    padding: 0 2vw;
+.conclusion-container-1 {
     border-bottom: var(--border);
+    padding: 0 2vw;
 }
 
-.conclusion-container2 {
+.conclusion-container-2 {
     align-items: center;
     border-bottom: var(--border);
     display: flex;
@@ -557,58 +558,58 @@ a {
     animation: circle-spin 30s infinite;
     animation-delay: 5s;
     display: block;
-    padding: 2vh 0;
     height: 100%;
     margin: 5vh;
+    padding: 2vh 0;
 }
 
 
-.conclusion-text-part1 {
+.conclusion-text-1 {
     animation: leading-extend 10s;
     animation-delay: 10s;
     font-size: 1.5rem;
     line-height: 7vh;
-    text-align: center;
     margin: 5vh 7vh 0;
+    text-align: center;
 }
 
 .conclusion-text-stop {
     animation: intro 40s;
     font-size: 10rem;
-    text-align: center;
     margin: 0 0 6vh;
+    text-align: center;
 }
 
-.conclusion-text-part2 {
+.conclusion-text-2 {
     /* animation: leading-extend 30s; */
     font-size: 1.5rem;
     line-height: 7vh;
-    text-align: center;
     margin: 0 7vh 5vh;
+    text-align: center;
 }
 
-.conclusion-text-part3 {
+.conclusion-text-3 {
     font-size: 2rem;
     font-style: normal;
-    padding: 0 20vw 0 10vw;
     margin-top: 6vh;
+    padding: 0 20vw 0 10vw;
 }
 
 .punctuation {
     animation: leading-extend2 30s infinite;
     font-size: 3rem;
     font-style: normal;
-    padding: 0vh 20vw;
     margin-top: 6vh;
+    padding: 0vh 20vw;
     text-align: center;
 }
 
-.conclusion-text-part4 {
+.conclusion-text-4 {
     font-size: 2rem;
     font-style: normal;
-    padding: 0 10vw 0 20vw;
     margin-top: 6vh;
     margin-bottom: 12vh;
+    padding: 0 10vw 0 20vw;
     text-align: right;
 }
 
@@ -617,12 +618,12 @@ a {
         margin: 5vh 10vw;
     }
     
-    .conclusion-text-part1 {
+    .conclusion-text-1 {
         font-size: 2rem;
         margin: 5vh 10vh 0;
     }
 
-    .conclusion-text-part2 {
+    .conclusion-text-2 {
         font-size: 2rem;
         margin: 0 10vh 6vh;
     }
@@ -638,12 +639,12 @@ a {
         margin: 5vh 30vw;
     }
 
-    .conclusion-text-part1 {
+    .conclusion-text-1 {
         font-size: 2rem;
         margin: 5vh 30vw 0;
     }
 
-    .conclusion-text-part2 {
+    .conclusion-text-2 {
         font-size: 2rem;
         margin: 0 30vw 6vh;
     }
@@ -652,11 +653,11 @@ a {
         margin: 0 0 15vh;
     }
 
-    .conclusion-text-part3 {
+    .conclusion-text-3 {
         padding: 0 25vw 0 15vw;
     }
 
-    .conclusion-text-part4 {
+    .conclusion-text-4 {
         padding: 0 15vw 0 25vw;
     }
 }
